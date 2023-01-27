@@ -1,0 +1,23 @@
+td,th {
+    border: 4px solid green;
+    padding: 15px;
+    font-family: serif;
+}
+table {
+    border-collapse: collapse;
+    margin: 10px;
+    width: 100%;
+}
+.nav {
+    list-style: none;
+    margin: 10px;
+}
+.nav>li {
+    float: left;
+    
+}
+.nav>li>a {
+    padding: 10px;
+    color: red;
+    text-decoration: none;
+}

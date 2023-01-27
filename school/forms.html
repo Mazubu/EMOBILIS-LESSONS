@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+
+    }
+    body {
+        height: 100vh;
+        background-color: orange;
+        /*margin: 0;*/
+        /*padding: 0;*/
+    }
+    .heading {
+        float: left;
+        text-align: center;
+        width: 100%;
+        padding: 40px;
+        font-size: x-large;
+    }.heading>h2 {
+        font-weight: bolder;
+        font-family: sans-serif;
+         }
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    input {
+        text-align: center;
+        width: 35em;
+        margin: .5em;
+        height: 2em;
+        border-radius: 30px;
+        border: #fff solid 2px;
+        outline: none;
+        font-size: large;
+        background: transparent;
+    }
+    label {
+        font-size: larger;
+        color: #000;
+    }
+    button{
+        background-color: #fff;
+        color: orange;
+        height: 4.5em;
+        width: 15em;
+        outline: none;
+        text-transform: uppercase;
+        font-family: Droid Sans Mono Dotted;
+        font-size: large;
+    }button:hover {
+        background-color: #fff;
+        color: black;
+        transform: scale(1.2);
+         }
+</style>
+<div class="heading">
+<h2>Student Registration Form
+</h2>
+</div>
+<form action="index.html">
+    <label for="firstname">Full names</label>
+    <input type="text" name="" id="firstname"><br>
+    <label for="email">Email Address</label>
+    <input type="email" name="" id="email"><br>
+    <label for="simu">Phone Number</label>
+    <input type="text" name="" id="simu"><br>
+    <label for="male">Male</label>
+    <input type="radio" name="gender" id="male">
+    <label for="female">Female</label>
+    <input type="radio" name="gender" id="female">
+    <label for="course">Course Taken</label>
+    <select name="course" id="course">
+        <option value="Software Development">Software Development</option>
+        <option value="Mobile Programming">Mobile Programming</option>
+         <option value="HTML">HTML</option>
+         <option value="CSS">CSS</option>
+         <option value="KOTLIN">KOTLIN</option>
+         <option value="BINARY">BINARY</option>
+        <option value="DATA SCIENCE">DATA SCIENCE</option>
+        <option value="COMPUTER ENGINEERING">COMPUTER ENGINEERING</option>
+    </select>
+    <label for="dob">Date of Birth</label>
+    <input type="date" name="" id="dob">
+    <label for="password">Password</label>
+    <input type="password" name="" id="password"><br>
+    <button>Register Here</button>
+</form>
+</body>
+</html>
